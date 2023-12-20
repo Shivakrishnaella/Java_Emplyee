@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v1
         with:
-          java-version: '8.0.0_322'
+          java-version: '8.0.0_181_zulu'
 
       - name: Build with Maven
         run: mvn clean install
@@ -50,4 +50,4 @@ jobs:
           app-name: 'app111123'
           slot-name: 'Production'
           package: '*.war'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A0234508096E442791A3A34FB0954909 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A3EA9D26DD534CBBB7D89BD57C620488 }}
